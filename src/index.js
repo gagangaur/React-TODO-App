@@ -27,17 +27,14 @@ class App extends Component {
       </div>
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
           <p>Hello this is Gagan Gaur.</p>
           <a
             className="App-link"
-            href="https://reactjs.org"
+            href="https://github.com/gagangaur"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Learn React
+            My Github Link
           </a>
         </header>
       </div>
