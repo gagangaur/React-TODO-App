@@ -16,8 +16,10 @@ import ReactDOM from 'react-dom';
 import logo from './logo.svg';
 import './App.css';
 import {Header} from './components/header';
+import {Home} from './components/home';
 class App extends Component {
   render() {
+    let content="So let's start the development.";
     return (
       <div className="App container-fluid">
       <div className="row">
@@ -25,6 +27,8 @@ class App extends Component {
       <Header/>
       </div>
       </div>
+      <div className="container"><Home /></div>
+      <div><h1>{content} </h1></div>
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>Hello this is Gagan Gaur.</p>
