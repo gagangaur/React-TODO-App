@@ -11,53 +11,19 @@
 // // // Learn more about service workers: http://bit.ly/CRA-PWA
 // // serviceWorker.unregister();
 
-import React, { Component } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
-import logo from './logo.svg';
-import './App.css';
-import {Header} from './components/header';
-import {Home} from './components/home';
-class App extends Component {
-  render() {
-    let content="So let's start the development.";
-    return (
-      <div className="App container-fluid">
-      <div className="row">
-      <div className="col-md-12 col-sm-6 col-lg-6">
-      <Header/>
-      </div>
-      </div>
-      <div className="container"><Home /></div>
-      <div><h1>{content} </h1></div>
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>Hello this is Gagan Gaur.</p>
-          <a
-            className="App-link"
-            href="https://github.com/gagangaur"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            My Github Link
-          </a>
-        </header>
-      </div>
-    );
-  }
-}
+import App from './App';
 ReactDOM.render(<App />, document.getElementById('root'));
 
 // export default App;
-class Application extends Component{
-  render(){
-    return(
-      <div className="App">
-      <header className="App-header">
-      <img src={logo} className="App-logo" alt="logo" />
-      <p> Hello world this is beautiful to write the code in <code>react.js</code></p>
-      </header>
-      </div>
-    );
-  }
-}
-ReactDOM.render(<Application />,document.getElementById('rootni'));
+// class Application extends Component{
+//   render(){
+//     return(
+//       <div className="container-fluid mt-5 border border-black">
+//       <h3>Welcome</h3>
+//       </div>
+//     );
+//   }
+// }
+// ReactDOM.render(<Application />,document.getElementById('rootni'));

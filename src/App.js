@@ -1,44 +1,48 @@
-// import React, { Component } from 'react';
-// import ReactDOM from 'react-dom';
-// import logo from './logo.svg';
-// import './App.css';
+import React, { Component } from 'react';
+import {Header} from './components/Header';
+import {Home} from './components/Home';
 
-// class App extends Component {
-//   render() {
-//     return (
-//       <div className="App">
-//         <header className="App-header">
-//           <img src={logo} className="App-logo" alt="logo" />
-//           <p>
-//             Edit <code>src/App.js</code> and save to reload.
-//           </p>
-//           <p>Hello this is Gagan Gaur.</p>
-//           <a
-//             className="App-link"
-//             href="https://reactjs.org"
-//             target="_blank"
-//             rel="noopener noreferrer"
-//           >
-//             Learn React
-//           </a>
-//         </header>
-//       </div>
-//     );
-//   }
-// }
-// ReactDOM.render(<App />, document.getElementById('root'));
-
-// // export default App;
-// class Application extends Component{
-//   render(){
-//     return(
-//       <div className="App">
-//       <header className="App-header">
-//       <img src={logo} className="App-logo" alt="logo" />
-//       <p> Hello world this is beautiful to write the code in <code>react.js</code></p>
-//       </header>
-//       </div>
-//     );
-//   }
-// }
-// ReactDOM.render(<Application />,document.getElementById('rootni'));
+class App extends Component {
+    state = {
+        todos:    [
+                {
+                    id:1,
+                    title: "Meeting with clients",
+                    status: false
+                },
+                {
+                    id:2,
+                    title: "Meeting with partners",
+                    status: false
+                },
+                {
+                    id:3,
+                    title: "Going for a movie",
+                    status: false
+                },
+                {
+                    id:4,
+                    title: "Going to Fair",
+                    status: false
+                },
+                {
+                    id:5,
+                    title: "Going for jogging",
+                    status: false
+                }
+            ]
+        }
+        
+  render() {
+      console.log(this.state.todos);
+    return (
+        <div>
+        <div className="row">
+        <div className="col-lg-12 col-md-12 col-sm-6 col-xs-4 mb-5"><Header/></div>
+        </div>
+        <Home todos={this.state.todos}/>
+        </div>
+    );
+  }
+}
+export default App;
