@@ -1,0 +1,12 @@
+.btn{
+    color:white;
+    background-color: blueviolet;
+    font-size: 20px;
+    padding: 2rem;
+}
+.changeToBlue{
+    color: rgb(79, 149, 192);
+}
+.changeToGreen{
+    color: rgb(166, 221, 84);
+}
