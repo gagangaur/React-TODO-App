@@ -8,8 +8,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 2. In CLI write **npm install**.
 3. In CLI write **npm start**.
 
-A Todo App **Sneek Peek**
+### A Todo App Sneek Peek
+
 ![GitHub Logo](/public/image.png)
 
+
 **Here you Go !!**
+
+
 **Pull Requests and Issues are welcomed.**
