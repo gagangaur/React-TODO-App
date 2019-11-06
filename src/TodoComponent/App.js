@@ -1,13 +1,26 @@
-import React, { Fragment, useState } from "react";
+import React, { Fragment, useState, useEffect } from "react";
 import "../../node_modules/bootstrap/dist/css/bootstrap.css";
 import { Button, Container, Row, Col, Alert } from "react-bootstrap";
 import Todos from "./Todos";
 import uuid from "uuidv4";
 
+const LOCAL_STORAGE_KEY = "TODOS_KEY";
+
 export default function App() {
   const [todoValue, setTodoValue] = useState("");
   const [todos, updateTodosList] = useState([]);
   const [showAlert, changeAlertState] = useState(false);
+
+  useEffect(() => {
+    const storedTodos = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY));
+    // console.log(storedTodos);
+    if (storedTodos) updateTodosList(storedTodos);
+  }, []);
+
+  // saving the todos in browser storage to prevent loss of todos on refreshing tab
+  useEffect(() => {
+    localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(todos));
+  }, [todos]);
 
   // handling change in input box
   const handleInputChange = event => {
@@ -25,8 +38,9 @@ export default function App() {
         todo: todoValue,
         isDone: false
       };
-      todos.push(newItem);
-      updateTodosList(todos);
+      updateTodosList(previousTodos => {
+        return [...previousTodos, newItem];
+      });
       setTodoValue("");
     } else {
       changeAlertState(true);
