@@ -1,0 +1,43 @@
+/* body{
+    background-color: #1abc9c;
+} */
+.addItem {
+  /* background-color: #FFC107; */
+  color: white;
+  background: #c33764; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #1d2671,
+    #c33764
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #1d2671,
+    #c33764
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.addItem:hover {
+  color: white;
+  box-shadow: #29323c;
+}
+* {
+  box-sizing: border-box;
+}
+
+.header-color {
+  background: #141e30; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #243b55,
+    #141e30
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #243b55,
+    #141e30
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.todo-color {
+  background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+}
