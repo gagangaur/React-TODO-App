@@ -11,9 +11,6 @@ const StyledDiv = styled.div`
 export default function StyledComponents() {
         return (
             <Fragment>
-            <StyledDiv>
-                <p>Hey Booty Yo Whatsuppp???</p>
-            </StyledDiv>
             <StyledButton>Touch Me</StyledButton>
             </Fragment>
         );
