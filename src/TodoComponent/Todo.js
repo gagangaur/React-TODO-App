@@ -3,19 +3,16 @@ import "./App.css";
 import { Fragment } from "react";
 import { Form } from "react-bootstrap";
 
-
 export default function Todo(props) {
   const { id, todo: task, isDone } = props.items;
 
- // responsible for styling todo  when a todo is checked
+  // responsible for styling todo  when a todo is checked
   const getStyle = () => {
-    
     return {
       cursor: "pointer",
       textDecoration: isDone ? "line-through" : "none"
     };
   };
-
 
   return (
     <Fragment>
@@ -25,8 +22,11 @@ export default function Todo(props) {
       >
         <div key={id}>
           <Form.Check
-            custom checked={isDone} onChange={()=>{}}
-            id={id} 
+            className="trigger"
+            custom
+            onChange={() => {}}
+            checked={isDone}
+            id={id}
             type={"checkbox"}
             label={
               <strong className="ml-3" style={getStyle()}>
