@@ -9,8 +9,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ### Follow steps to make it run on your machine :-
 **Prerequisite** : Node.js must be installed on the machine
 1. Clone the project
-2. In CLI write **npm install**.
-3. In CLI write **npm start**.
+2. In CLI write `npm install`
+3. In CLI write `npm start`
 
 ### A Todo App Sneek Peek
 
