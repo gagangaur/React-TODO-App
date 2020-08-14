@@ -20,7 +20,10 @@ export default function Todo(props) {
         className="alert  alert-dismissible fade show alertBox w-75 mx-auto shadow-lg todo-color"
         role="alert"
       >
-        <div key={id}>
+        <div 
+          key={id} 
+          onClick={() => props.markComplete(id)}
+        >
           <Form.Check
             className="trigger"
             custom
