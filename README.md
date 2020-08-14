@@ -3,7 +3,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## React fully responsive Todo Application
 
 
-#### [Check it out here](https://unruffled-panini-10d317.netlify.com/).
+#### [Check it out here](https://react-todos-application.netlify.app/).
 
 
 ### Follow steps to make it run on your machine :-
