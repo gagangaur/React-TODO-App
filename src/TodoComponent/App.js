@@ -47,6 +47,13 @@ export default function App() {
     }
   };
 
+  // handling enter key pressed
+  const handleKeyPress = (e) => {
+    if (e.key === 'Enter') {
+      handleButtonClick();
+    }
+  }
+
   // responsible for changing state of a selected todo from true to false and vice versa
   const markComplete = id => {
     const updatedTodo = todos.map(item => {
@@ -93,6 +100,7 @@ export default function App() {
               style={{ height: "50px" }}
               onChange={handleInputChange}
               placeholder="Enter Something..."
+              onKeyDown={handleKeyPress}
             />
           </Col>
           <Col
